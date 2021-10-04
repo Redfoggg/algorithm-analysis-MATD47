@@ -1,0 +1,28 @@
+graph G {
+    node1 [label="7"]
+
+    //rigth branch
+    node2 [label="5"]
+    node3 [label="3"]
+    node4 [label="2"]
+
+    //left branch
+    node5 [label="4"]
+    node6 [label="2"]
+    node7 [label="1"]
+
+    node1 -- node2 [label=" -2"]
+    node1 -- node5 [label=" -3"]
+
+    node2 -- node3 [label=" -2"]
+    node2 -- node4 [label=" -3"]
+
+    node5 -- node6 [label="  -2"]
+    node5 -- node7 [label=" -3"]
+
+    node4 -- n [style=dotted]
+    node6 -- n [style=dotted]
+    node7 -- n [style=dotted]
+    node3 -- n [style=dotted]
+
+}
